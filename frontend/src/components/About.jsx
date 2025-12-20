@@ -55,14 +55,10 @@ function About() {
         <div className="about-content">
           <div className="about-text">
             <p>
-              I'm a passionate Full Stack Developer with a strong foundation in modern 
-              web technologies. I love turning complex problems into simple, beautiful, 
-              and intuitive solutions.
+              I'm a second-year Computer Science Engineering student with a passion for building innovative web applications and solving real-world problems through code. My journey in tech began with curiosity about how websites work, and has evolved into a deep interest in full-stack development, algorithms, and emerging technologies.
             </p>
             <p>
-              My journey in software development started with curiosity and has evolved 
-              into a profession I'm truly passionate about. I specialize in building 
-              responsive, user-friendly applications that deliver exceptional user experiences.
+              Currently, I'm focused on mastering modern web development frameworks and expanding my skills in both frontend and backend technologies. I enjoy participating in hackathons, contributing to open-source projects, and continuously learning new tools to stay ahead in this ever-evolving field. When I'm not coding, you'll find me exploring new tech trends, collaborating with peers on projects, or sharing knowledge within the developer community.
             </p>
             <p>
               When I'm not coding, you'll find me exploring new technologies, contributing 
@@ -72,15 +68,15 @@ function About() {
 
           <div className="about-stats-grid">
             <div className="stat-card card about-stats">
-              <h3 className="text-gradient">50+</h3>
+              <h3 className="text-gradient">2+</h3>
               <p>Projects Completed</p>
             </div>
             <div className="stat-card card about-stats">
-              <h3 className="text-gradient">3+</h3>
+              <h3 className="text-gradient">[Beginner]</h3>
               <p>Years Experience</p>
             </div>
             <div className="stat-card card about-stats">
-              <h3 className="text-gradient">30+</h3>
+              <h3 className="text-gradient">N/A</h3>
               <p>Happy Clients</p>
             </div>
           </div>

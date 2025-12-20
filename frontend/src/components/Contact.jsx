@@ -140,7 +140,7 @@ function Contact() {
             <div className="info-card card">
               <div className="info-icon">📧</div>
               <h4>Email</h4>
-              <p>your.email@example.com</p>
+              <p>atanu6939@gmail.com</p>
             </div>
 
             <div className="info-card card">
@@ -156,13 +156,13 @@ function Contact() {
             </div>
 
             <div className="social-links">
-              <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="social-link">
+              <a href="https://github.com/AtanuHacks" target="_blank" rel="noopener noreferrer" className="social-link">
                 GitHub
               </a>
-              <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" className="social-link">
+              <a href="https://www.linkedin.com/in/atanu-bose-51869734a" target="_blank" rel="noopener noreferrer" className="social-link">
                 LinkedIn
               </a>
-              <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" className="social-link">
+              <a href="https://x.com/X_Atanu_?t=Mf5wtPAujn5D_S-PwGfRSQ&s=09" target="_blank" rel="noopener noreferrer" className="social-link">
                 Twitter
               </a>
             </div>

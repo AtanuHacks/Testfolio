@@ -61,9 +61,9 @@ function Hero() {
         <div className="hero-text" ref={textRef}>
           <p className="hero-subtitle">Hi, I'm</p>
           <h1 className="hero-title">
-            <span className="text-gradient">Your Name</span>
+            <span className="text-gradient">Atanu Bose</span>
           </h1>
-          <h2 className="hero-role">Full Stack Developer</h2>
+          <h2 className="hero-role">CSE Undergrad</h2>
           <p className="hero-description">
             I build exceptional digital experiences that combine beautiful design 
             with powerful functionality. Passionate about creating solutions that 

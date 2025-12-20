@@ -54,7 +54,7 @@ function Footer() {
           <div className="footer-section">
             <h4>Contact Info</h4>
             <div className="footer-contact">
-              <p>📧 your.email@example.com</p>
+              <p>📧 atanu6939@gmail.com</p>
               <p>📱 +91 1234567890</p>
               <p>📍 Kolkata, West Bengal, India</p>
             </div>

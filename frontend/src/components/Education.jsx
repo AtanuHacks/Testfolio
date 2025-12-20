@@ -27,25 +27,25 @@ function Education() {
 
   const educationData = [
     {
-      degree: "Bachelor of Technology in Computer Science",
-      institution: "Your University Name",
-      year: "2020 - 2024",
+      degree: "Bachelor of Technology in Computer Science and Engineering",
+      institution: "Asansol Engineering College",
+      year: "2024 - 2028",
       description: "Focused on software engineering, data structures, algorithms, and web development.",
-      grade: "CGPA: 8.5/10"
+      grade: "CGPA: 8.7/10"
     },
     {
       degree: "Higher Secondary Certificate",
-      institution: "Your School Name",
-      year: "2018 - 2020",
-      description: "Science stream with specialization in Mathematics and Computer Science.",
-      grade: "Percentage: 90%"
+      institution: "D.A.V. Public School, Rupnarayanpur",
+      year: "2023 - 2024",
+      description: "PCM with Computer Science.",
+      grade: "Percentage: 93.4%"
     },
     {
       degree: "Secondary School Certificate",
-      institution: "Your School Name",
-      year: "2017 - 2018",
+      institution: "D.A.V. Public School, Rupnarayanpur",
+      year: "2021 - 2022",
       description: "Completed secondary education with distinction.",
-      grade: "Percentage: 88%"
+      grade: "Percentage: 95.4%"
     }
   ];
 
