@@ -17,17 +17,19 @@ function About() {
         scrollTrigger: {
           trigger: '.about-content',
           start: 'top 80%',
+          toggleActions: 'play none none reverse'
         }
       });
 
-      gsap.from('.about-stats', {
+      gsap.from('.stat-card', {
         opacity: 0,
         y: 30,
-        duration: 1,
+        duration: 0.8,
         stagger: 0.2,
         scrollTrigger: {
-          trigger: '.about-stats',
+          trigger: '.about-stats-grid',
           start: 'top 80%',
+          toggleActions: 'play none none reverse'
         }
       });
     }, aboutRef);

@@ -21,25 +21,6 @@ function Footer() {
       <div className="container">
         <div className="footer-content">
           <div className="footer-section">
-            <h3 className="text-gradient">Portfolio</h3>
-            <p>Building digital experiences that make a difference.</p>
-            <div className="social-links">
-              <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                GitHub
-              </a>
-              <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                LinkedIn
-              </a>
-              <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-                Twitter
-              </a>
-              <a href="mailto:your.email@example.com" aria-label="Email">
-                Email
-              </a>
-            </div>
-          </div>
-
-          <div className="footer-section">
             <h4>Quick Links</h4>
             <div className="footer-links">
               {location.pathname === '/' ? (
