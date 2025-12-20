@@ -10,32 +10,40 @@ function About() {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      gsap.from('.about-content', {
-        opacity: 0,
-        y: 50,
-        duration: 1,
-        scrollTrigger: {
-          trigger: '.about-content',
-          start: 'top 80%',
-          toggleActions: 'play none none reverse'
-        }
-      });
+      // Ensure GSAP controls initial state
+      gsap.set('.about-text p', { opacity: 0, y: 30 });
+      gsap.set('.stat-card', { opacity: 0, y: 40 });
 
-      gsap.from('.stat-card', {
-        opacity: 0,
-        y: 30,
+      gsap.to('.about-text p', {
+        opacity: 1,
+        y: 0,
         duration: 0.8,
         stagger: 0.2,
+        ease: 'power3.out',
+        scrollTrigger: {
+          trigger: '.about-content',
+          start: 'top 75%',
+          once: true, // 🔥 KEY: no flicker on refresh
+        },
+      });
+
+      gsap.to('.stat-card', {
+        opacity: 1,
+        y: 0,
+        duration: 0.8,
+        stagger: 0.2,
+        ease: 'power3.out',
         scrollTrigger: {
           trigger: '.about-stats-grid',
           start: 'top 80%',
-          toggleActions: 'play none none reverse'
-        }
+          once: true, // 🔥 KEY
+        },
       });
     }, aboutRef);
 
     return () => ctx.revert();
   }, []);
+
 
   return (
     <section id="about" className="about" ref={aboutRef}>

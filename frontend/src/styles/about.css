@@ -5,6 +5,7 @@
 .about {
   background: var(--dark-bg);
   width: 100%;
+  overflow: hidden; /* GSAP safety */
 }
 
 /* Centered container */
@@ -13,8 +14,6 @@
   margin: 0 auto;
   padding: 4rem 1.5rem;
 }
-
-/* Title handled globally (.section-title) */
 
 /* ================================
    CONTENT LAYOUT
@@ -27,12 +26,18 @@
   align-items: center;
   max-width: 1000px;
   margin: 0 auto;
-  opacity: 1 !important; /* Force visibility */
 }
 
 /* ================================
    TEXT BLOCK
 ================================ */
+
+/* Prevent initial flash BEFORE GSAP loads */
+.about-text p,
+.stat-card {
+  opacity: 0;
+}
+
 
 .about-text {
   max-width: 520px;
@@ -53,7 +58,6 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.5rem;
-  opacity: 1 !important; /* Force visibility */
 }
 
 .stat-card {
@@ -62,13 +66,11 @@
   background: var(--card-bg);
   border: 1px solid var(--border-color);
   border-radius: 12px;
-  transition: all 0.3s ease;
-  opacity: 1 !important; /* Force visibility */
-  transform: translateY(0) !important; /* Reset any transforms */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 .stat-card:hover {
-  transform: translateY(-5px) !important;
+  transform: translateY(-5px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   border-color: var(--primary-color);
 }
@@ -121,4 +123,4 @@
   .about-stats-grid {
     grid-template-columns: 1fr;
   }
-} 
+}
