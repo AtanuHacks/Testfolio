@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useLayoutEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import '../styles/skills.css';
@@ -8,18 +8,25 @@ gsap.registerPlugin(ScrollTrigger);
 function Skills() {
   const skillsRef = useRef(null);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const ctx = gsap.context(() => {
-      gsap.from('.skill-card', {
-        opacity: 0,
-        scale: 0.8,
-        duration: 0.5,
-        stagger: 0.1,
-        scrollTrigger: {
-          trigger: '.skills-grid',
-          start: 'top 70%',
+      gsap.fromTo(
+        '.skill-card',
+        { opacity: 0, scale: 0.8, y: 30 },
+        {
+          opacity: 1,
+          scale: 1,
+          y: 0,
+          duration: 0.6,
+          stagger: 0.1,
+          ease: 'power3.out',
+          scrollTrigger: {
+            trigger: '.skills-grid',
+            start: 'top 85%',
+            toggleActions: 'play none none reverse',
+          },
         }
-      });
+      );
     }, skillsRef);
 
     return () => ctx.revert();

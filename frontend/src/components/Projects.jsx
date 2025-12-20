@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useLayoutEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import '../styles/projects.css';
@@ -8,18 +8,24 @@ gsap.registerPlugin(ScrollTrigger);
 function Projects() {
   const projectsRef = useRef(null);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const ctx = gsap.context(() => {
-      gsap.from('.project-card', {
-        opacity: 0,
-        y: 50,
-        duration: 0.8,
-        stagger: 0.2,
-        scrollTrigger: {
-          trigger: '.projects-grid',
-          start: 'top 70%',
+      gsap.fromTo(
+        '.project-card',
+        { opacity: 0, y: 50 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.8,
+          stagger: 0.15,
+          ease: 'power3.out',
+          scrollTrigger: {
+            trigger: '.projects-grid',
+            start: 'top 85%',
+            toggleActions: 'play none none reverse',
+          },
         }
-      });
+      );
     }, projectsRef);
 
     return () => ctx.revert();
