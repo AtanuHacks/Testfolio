@@ -35,7 +35,7 @@ A modern, full-stack portfolio website showcasing my skills, projects, and exper
 - Live URL: `[Your Backend URL]`
 
 ### Frontend
-- Deployed on: [Vercel](https://vercel.com)
+- Deployed on: [Vercel](https://testfolio-delta.vercel.app/)
 - Live URL: `[Your Frontend URL]`
 
 ## 🎨 Features in Detail
