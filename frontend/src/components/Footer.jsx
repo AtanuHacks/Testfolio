@@ -62,7 +62,7 @@ function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; {new Date().getFullYear()} Your Name. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Atanu Bose. All rights reserved.</p>
           <p>Built with React, Express.js & MongoDB</p>
         </div>
       </div>
