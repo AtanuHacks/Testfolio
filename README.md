@@ -30,13 +30,15 @@ A modern, full-stack portfolio website showcasing my skills, projects, and exper
 
 ## 🌐 Deployment
 
+- Portfolio Link: https://testfolio-delta.vercel.app/
+
 ### Backend
-- Deployed on: [Render](https://testfolio.onrender.com/)
-- Live URL: `[Your Backend URL]`
+- Deployed on: [Render]
+- Live URL: `[https://testfolio.onrender.com/]`
 
 ### Frontend
-- Deployed on: [Vercel](https://testfolio-delta.vercel.app/)
-- Live URL: `[Your Frontend URL]`
+- Deployed on: [Vercel]
+- Live URL: `[https://testfolio-delta.vercel.app/]`
 
 ## 🎨 Features in Detail
 
