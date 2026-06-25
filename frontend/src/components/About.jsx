@@ -55,7 +55,7 @@ function About() {
         <div className="about-content">
           <div className="about-text">
             <p>
-              I'm a second-year Computer Science Engineering student with a passion for building innovative web applications and solving real-world problems through code. My journey in tech began with curiosity about how websites work, and has evolved into a deep interest in full-stack development, algorithms, and emerging technologies.
+              I'm a third-year Computer Science Engineering student with a passion for building innovative web applications and solving real-world problems through code. My journey in tech began with curiosity about how websites work, and has evolved into a deep interest in full-stack development, algorithms, and emerging technologies.
             </p>
             <p>
               Currently, I'm focused on mastering modern web development frameworks and expanding my skills in both frontend and backend technologies. I enjoy participating in hackathons, contributing to open-source projects, and continuously learning new tools to stay ahead in this ever-evolving field. When I'm not coding, you'll find me exploring new tech trends, collaborating with peers on projects, or sharing knowledge within the developer community.
